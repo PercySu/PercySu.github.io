@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-09-28T11:36:11.680Z</updated>
+  <updated>2017-09-29T12:31:07.516Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,23 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2017/09/28/hello-world/"/>
-    <id>http://yoursite.com/2017/09/28/hello-world/</id>
-    <published>2017-09-28T11:36:11.680Z</published>
-    <updated>2017-09-28T11:36:11.680Z</updated>
+    <title>VS Code配置Python开发环境</title>
+    <link href="http://yoursite.com/2017/09/29/new-article/"/>
+    <id>http://yoursite.com/2017/09/29/new-article/</id>
+    <published>2017-09-29T11:15:57.000Z</published>
+    <updated>2017-09-29T12:31:07.516Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="必读"><a href="#必读" class="headerlink" title="必读"></a>必读</h2><ul><li>要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。<del>如果你有简便的方法请告诉我。</del></li></ul><h3 id="配置Python开发环境"><a href="#配置Python开发环境" class="headerlink" title="配置Python开发环境"></a>配置Python开发环境</h3><ol><li>点击<font color="#ff0000">扩展</font>,搜索<font color="#0099ff">python</font>,选择第一个，点击<font color="#0099ff">安装</font>。<br><img src="http://i4.bvimg.com/613459/3d7decf6e76af5a9.png" alt="first"><a id="more"></a></li><li>配置python路径： <font color="#0099fe" 左上角菜单="" --=""> 文件 –&gt; 首选项 –&gt; 设置 –&gt;</font>(此时会出现左右两栏，左边是默认设置，右边是用户设置，我们要在用户设置中输入来覆盖默认的设置)，在<font color="#ff0000">搜索栏</font>中输入<font color="#0099ff">pythonpath</font>,从左边复制粘贴到右边，将pythonpath中的值改为你的python的绝对路径：<br><img src="http://i2.bvimg.com/613459/7bacf72c6529377c.png" alt="second"></li><li>打开一个文件夹，创建一个python文件，随便写点代码，按<font color="#ff0000"><strong>Ctrl + Shift + b</strong></font>运行程序。这时候会提示<font color="#ff0000"><strong><span style="border-bottom:2px dashed red;">配置生成任务</span></strong></font>。选择<font color="#0099ff">运行任意外部命令菜单</font>。<br><img src="http://i2.bvimg.com/613459/5f0b7444033a6aac.png" alt="third"><br><img src="http://i2.bvimg.com/613459/4a60d72def02c553.png" alt="fourth"></li><li>在打开的 <font color="#ff0000">task.json</font>文件中改为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  // See https://go.microsoft.com/fwlink/?LinkId=733558</div><div class="line">  // for the documentation about the tasks.json format</div><div class="line">  &quot;version&quot;: &quot;2.0.0&quot;,</div><div class="line">  &quot;command&quot;: &quot;python&quot;,</div><div class="line">  &quot;isShellCommand&quot;: true,</div><div class="line">  &quot;args&quot;: [&quot;$&#123;file&#125;&quot;],</div><div class="line">  &quot;showOutput&quot;: &quot;always&quot;,</div><div class="line">  &quot;options&quot;: &#123;</div><div class="line">    &quot;env&quot;:&#123;</div><div class="line">      &quot;PYTHONIOENCODING&quot;: &quot;UTF-8&quot;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></li></ol><p>再<font color="#ff0000">Ctrl + Shift +b</font>运行程序即可。</p><h3 id="若想调试，配置交互式环境："><a href="#若想调试，配置交互式环境：" class="headerlink" title="若想调试，配置交互式环境："></a>若想调试，配置交互式环境：</h3><p>  选择调试，在<font color="#0099ff">下拉菜单</font>（现在为空）里选择<font color="#ff0000">添加配置</font>,会生成<font color="#ff0000"><strong><em>launch.json</em></strong></font>文件，保存关闭,下拉菜单会出现多个选项，一般选择：<font color="#009900"><br>  ①python（不能接受输入）<br>  ②Intergrated Terminal/Console<br>  ③External Terminal/Console<br>  </font><br>  <img src="http://i2.bvimg.com/613459/d3fdbf737e580cfc.png" alt="fifth"><br>当选择<font color="#009900">②Intergrated Terminal/Console</font>时，对<font color="#ff0000">launch.json</font>进行配置，<font color="#ff0000"><em>找到”name”:”Intergrated Terminal/Console”这一项，将”cwd”里的值改为”${workspaceRoot}”即可</em></font>。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;h2 id=&quot;必读&quot;&gt;&lt;a href=&quot;#必读&quot; class=&quot;headerlink&quot; title=&quot;必读&quot;&gt;&lt;/a&gt;必读&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。&lt;del&gt;如果你有简便的方法请告诉我。&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;配置Python开发环境&quot;&gt;&lt;a href=&quot;#配置Python开发环境&quot; class=&quot;headerlink&quot; title=&quot;配置Python开发环境&quot;&gt;&lt;/a&gt;配置Python开发环境&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;点击&lt;font color=&quot;#ff0000&quot;&gt;扩展&lt;/font&gt;,搜索&lt;font color=&quot;#0099ff&quot;&gt;python&lt;/font&gt;,选择第一个，点击&lt;font color=&quot;#0099ff&quot;&gt;安装&lt;/font&gt;。&lt;br&gt;&lt;img src=&quot;http://i4.bvimg.com/613459/3d7decf6e76af5a9.png&quot; alt=&quot;first&quot;&gt;
     
     </summary>
     
+      <category term="环境搭建" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="VS Code" scheme="http://yoursite.com/tags/VS-Code/"/>
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
     
   </entry>
   
