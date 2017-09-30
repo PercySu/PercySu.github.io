@@ -5,9 +5,9 @@
   <subtitle>何不如笑傲风月，踏三山，伴红颜，此生无憾！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://percysu.com/"/>
   <updated>2017-09-29T12:55:22.837Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://percysu.com/</id>
   
   <author>
     <name>PercySu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>VS Code配置Python开发环境</title>
-    <link href="http://yoursite.com/2017/09/29/new-article/"/>
-    <id>http://yoursite.com/2017/09/29/new-article/</id>
+    <link href="http://percysu.com/2017/09/29/new-article/"/>
+    <id>http://percysu.com/2017/09/29/new-article/</id>
     <published>2017-09-29T11:15:57.000Z</published>
     <updated>2017-09-29T12:55:22.837Z</updated>
     
@@ -35,12 +35,12 @@
     
     </summary>
     
-      <category term="环境搭建" scheme="http://yoursite.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="VS Code" scheme="http://yoursite.com/tags/VS-Code/"/>
+      <category term="VS Code" scheme="http://percysu.com/tags/VS-Code/"/>
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="http://percysu.com/tags/Python/"/>
     
   </entry>
   
