@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://percysu.com/"/>
-  <updated>2017-10-01T05:28:50.339Z</updated>
+  <updated>2017-10-01T05:54:46.454Z</updated>
   <id>http://percysu.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于VS Code报错“扩展主机意外终止”的解决办法</title>
+    <link href="http://percysu.com/2017/10/01/Third_Article/"/>
+    <id>http://percysu.com/2017/10/01/Third_Article/</id>
+    <published>2017-10-01T05:33:41.000Z</published>
+    <updated>2017-10-01T05:54:46.454Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>这是很久前遇到的问题了，写下来方便后面遇到同样问题的朋友参考下，因为我本人在百度和Google上查了很久才解决掉。</p><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>一张图片足矣:<br><img src="http://ox33lq08p.bkt.clouddn.com/2986047206-58e741da31fe3_articlex.jpg" alt="1"></p><h2 id="解决线索"><a href="#解决线索" class="headerlink" title="解决线索"></a>解决线索</h2><p>最后在Github上找到了一些线索，就实践了下，结果意外地成功了，感谢微软的员工<strong>joaomoreno</strong>。附上他的解决方法：<a href="https://github.com/Microsoft/vscode/issues/24742" target="_blank" rel="external">链接</a><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171001_134831.png" alt="2"><br><a id="more"></a></p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>我给出我最后的解决办法：<font color="#0099ff">重装git</font>。如果你发现自己没git，那就去下载一个。<a href="https://git-scm.com/" target="_blank" rel="external">下载地址</a></p><h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>后面我偶然发现，在一个帖子里，有一个用户和我同样的操作，证明是可行的。<a href="https://segmentfault.com/q/1010000008978467/a-1020000008979253" target="_blank" rel="external">链接</a><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171001_135411.png" alt="3"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;这是很久前遇到的问题了，写下来方便后面遇到同样问题的朋友参考下，因为我本人在百度和Google上查了很久才解决掉。&lt;/p&gt;
+&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;一张图片足矣:&lt;br&gt;&lt;img src=&quot;http://ox33lq08p.bkt.clouddn.com/2986047206-58e741da31fe3_articlex.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;解决线索&quot;&gt;&lt;a href=&quot;#解决线索&quot; class=&quot;headerlink&quot; title=&quot;解决线索&quot;&gt;&lt;/a&gt;解决线索&lt;/h2&gt;&lt;p&gt;最后在Github上找到了一些线索，就实践了下，结果意外地成功了，感谢微软的员工&lt;strong&gt;joaomoreno&lt;/strong&gt;。附上他的解决方法：&lt;a href=&quot;https://github.com/Microsoft/vscode/issues/24742&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;链接&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ox33lq08p.bkt.clouddn.com/snipaste20171001_134831.png&quot; alt=&quot;2&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="问题解决" scheme="http://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="VS Code" scheme="http://percysu.com/tags/VS-Code/"/>
+    
+  </entry>
   
   <entry>
     <title>Atom插件安装问题</title>
