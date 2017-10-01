@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Atom插件安装问题]]></title>
+    <url>%2F2017%2F10%2F01%2FSecond_Article%2F</url>
+    <content type="text"><![CDATA[Atom：优雅迷人之美 其实我更喜欢VS Code，不过，不要在意这些细节。 Atom是由GitHub打造的先进开源的跨平台代码编辑器,它开源免费跨平台，并且整合 GIT 并提供类似 SublimeText 的包管理功能，支持插件扩展，可配置性非常高。Atom 代码编辑器支持 Windows、Mac、Linux 三大桌面平台，完全免费，并且已经在 GitHub 上开放了全部的源代码。可能，Atom在性能、启动速度、插件库方面与其他老牌代码编辑器还有一些差距，不过由于 Atom 是由 Github 维护的，它拥有非常强大的后台。并且那里有着大量极为优秀的编程爱好者，也是极客们的聚集地，相信在不久的将来Atom一定也会拥有不少新的插件包，而性能方面的缺点迟早也会被解决掉。PS：Atom一直以来让人诟病启动慢的问题在新版本的发行后已经得到了很好的解决。插件这篇文章主要是解决Atom插件安装时会遇到的问题。首先，先给出Atom的插件网站，点这里，你可以在这个网站上下载你想要安装的插件。1.插件下载2.插件安装然后将下载下来的.zip文件解压，解压后的文件夹放在C://用户//（你的用户名）//.atom//packages里面，然后启动Atom即可。ps:还有一种方式，不用下载插件，直接在Atom里面进行：想要安装中文插件，搜索“atom-simplified-chinese-menu”3.可能遇到的问题如果遇到下图类似的问题:第一条横线是你出错的插件名;第二条横线是缺少的部件。解决方法 cd到你的插件包里面：这里假设出问题的包是”activate-power-mode” 执行 npm install lodash.random 成功的话，重启Atom即可。如果不能执行npm命令，那么你需要下载Node.js:下载Node.js。]]></content>
+      <categories>
+        <category>问题解决</category>
+      </categories>
+      <tags>
+        <tag>Atom</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[VS Code配置Python开发环境]]></title>
-    <url>%2F2017%2F09%2F29%2Fnew-article%2F</url>
+    <url>%2F2017%2F09%2F29%2FFirst_Article%2F</url>
     <content type="text"><![CDATA[必读 要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。如果你有简便的方法请告诉我。配置Python开发环境 点击扩展,搜索python,选择第一个，点击安装。 配置python路径： 文件 –&gt; 首选项 –&gt; 设置 –&gt;(此时会出现左右两栏，左边是默认设置，右边是用户设置，我们要在用户设置中输入来覆盖默认的设置)，在搜索栏中输入pythonpath,从左边复制粘贴到右边，将pythonpath中的值改为你的python的绝对路径： 打开一个文件夹，创建一个python文件，随便写点代码，按Ctrl + Shift + b运行程序。这时候会提示配置生成任务。选择运行任意外部命令菜单。 在打开的 task.json文件中改为：1234567891011121314&#123; // See https://go.microsoft.com/fwlink/?LinkId=733558 // for the documentation about the tasks.json format &quot;version&quot;: &quot;2.0.0&quot;, &quot;command&quot;: &quot;python&quot;, &quot;isShellCommand&quot;: true, &quot;args&quot;: [&quot;$&#123;file&#125;&quot;], &quot;showOutput&quot;: &quot;always&quot;, &quot;options&quot;: &#123; &quot;env&quot;:&#123; &quot;PYTHONIOENCODING&quot;: &quot;UTF-8&quot; &#125; &#125;&#125; 再Ctrl + Shift +b运行程序即可。 若想调试，配置交互式环境 选择调试，在下拉菜单（现在为空）里选择添加配置,会生成launch.json文件，保存关闭,下拉菜单会出现多个选项，一般选择： ①python（不能接受输入） ②Intergrated Terminal/Console ③External Terminal/Console 当选择②Intergrated Terminal/Console时，对launch.json进行配置，找到”name”:”Intergrated Terminal/Console”这一项，将”cwd”里的值改为”${workspaceRoot}”即可。 参考资料：https://jingyan.baidu.com/article/00a07f38503a2b82d028dc26.html https://www.zhihu.com/question/49799276]]></content>
       <categories>
         <category>环境搭建</category>
