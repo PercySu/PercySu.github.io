@@ -984,7 +984,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  519
+                  1,293
                 </span>
               
 
@@ -1000,7 +1000,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  5
                 </span>
               
             </div>
@@ -1022,30 +1022,15 @@
 
       
         
-          
-            <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js下载地址</a><br>可以通过node -v命令测试是否安装成功。<br>具体操作：<code>①win+r</code> –&gt;  <code>②cmd</code>  –&gt;  <code>③node -v</code><br>如果成功的话，是这样：<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_235417.png" alt="First"><br><strong>PS:<font color="ff0000">在这里我要安利一个软件，它可以用来代替<code>cmd</code>，这个软件叫做<code>cmder</code>，十分良心，附上下载地址：<a href="http://cmder.net/" target="_blank" rel="external">cmder下载地址</a></font></strong></p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>下载地址：<a href="https://git-scm.com/" target="_blank" rel="external">Git下载地址</a><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002403.png" alt="Second"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002448.png" alt="Third"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002637.png" alt="Fourth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002720.png" alt="Fifth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002741.png" alt="Sixth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002813.png" alt="Seventh"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003140.png" alt="Eighth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003203.png" alt="Ninth"><br>可以通过git –-version的命令来测试git是否安装成功<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_092042.png" alt="Tenth"></p>
-<h2 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h2><p>去Github官网注册即可。<br>注册完成之后添加SSH Key。<br>这个 SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交。<br>进入自己机器的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Users\OrangeSu(这里为你的用户名)</div></pre></td></tr></table></figure></p>
-<p>看看该文件夹下有没有: <code>.ssh</code>文件夹<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_104323.png" alt="Eleventh"></p>
-<p>下面就说下怎么配置SSH Key。 </p>
-<h2 id="生成新的SSH-Key配置"><a href="#生成新的SSH-Key配置" class="headerlink" title="生成新的SSH Key配置"></a>生成新的SSH Key配置</h2><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><p>在Git Bash执行代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t -rsa -C &quot;hzpengcheng@gmail.com&quot;</div></pre></td></tr></table></figure></p>
-<p>将邮箱改为你自己的邮箱。<br>成功后会生成两个文件<code>id_rsa</code>以及<code>id_rsa.pub</code></p>
-<h3 id="添加SSH-Key到Git-hub"><a href="#添加SSH-Key到Git-hub" class="headerlink" title="添加SSH Key到Git hub"></a>添加SSH Key到Git hub</h3><p>在Git hub右上角，点击头像，选择 Settings -&gt; SSH and GPG keys -&gt; New SSH key<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_121039.png" alt="Twelfth"></p>
-<p><font color="ff0000">复制你的<code>id_rsa.pub</code>里的内容到”Key”中</font><br>完成！！</p>
-<h1 id="搭建博客"><a href="#搭建博客" class="headerlink" title="搭建博客"></a>搭建博客</h1><h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在本地新建一个Blog文件夹，文件右键，选择Git BashHere。<br>（如果没有，是因为你安装Git时没有选择添加右键的选项）<a href="https://www.zhihu.com/question/48091139/answer/109144599" target="_blank" rel="external">解决方法</a></p>
-<p>输入指令安装hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure></p>
-<p>安装完成后，可在git bash中输入<code>hexo</code>测试是否安装成功。<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_124953.png" alt="Thirteenth"></p>
-<p>接着初始化Hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init hexo</div></pre></td></tr></table></figure></p>
-<p>初始化成功会显示<code>Start blogging with Hexo!</code><br>这时在你刚才创建的Blog文件夹里面会多出一个hexo文件夹</p>
-<p>进入hexo目录中，输入命令<code>npm install</code>，安装依赖文件以及部署形成文件<br>进入目录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cd hexo</div></pre></td></tr></table></figure></p>
-<p>安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
-<p>部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure></p>
-<p><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125249.png" alt="Fourteenth"></p>
-<p>开启服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server     可以简写为hexo s</div></pre></td></tr></table></figure></p>
-<p><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125747.png" alt="Fifteenth"></p>
-<p>打开浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 就可以看到默认的博客</p>
-
-          
+          <p>首先，资料参考自<a href="http://blog.csdn.net/wx_jin/article/details/51027783" target="_blank" rel="external">http://blog.csdn.net/wx_jin/article/details/51027783</a>，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。特此说明</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js下载地址</a><br>可以通过node -v命令测试是否安装成功。<br>具体操作：<code>①win+r</code> –&gt;  <code>②cmd</code>  –&gt;  <code>③node -v</code><br>如果成功的话，是这样：<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_235417.png" alt="First"><br><strong>PS:<font color="ff0000">在这里我要安利一个软件，它可以用来代替<code>cmd</code>，这个软件叫做<code>cmder</code>，十分良心，附上下载地址：<a href="http://cmder.net/" target="_blank" rel="external">cmder下载地址</a></font></strong><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/18/Fourth_Article/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1470,7 +1455,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.7k字</span>
+  <span class="post-count">博客全站共2.4k字</span>
 </div>
 
 
