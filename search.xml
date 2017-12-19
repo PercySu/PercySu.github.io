@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Windows下使用GitHub+Hexo搭建个人博客]]></title>
+    <url>%2F2017%2F12%2F18%2FFourth_Article%2F</url>
+    <content type="text"><![CDATA[准备工作安装Node.js下载地址：Node.js下载地址可以通过node -v命令测试是否安装成功。具体操作：①win+r –&gt; ②cmd –&gt; ③node -v如果成功的话，是这样：PS:在这里我要安利一个软件，它可以用来代替cmd，这个软件叫做cmder，十分良心，附上下载地址：cmder下载地址 安装Git下载地址：Git下载地址可以通过git –-version的命令来测试git是否安装成功 注册Github账号去Github官网注册即可。注册完成之后添加SSH Key。这个 SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交。进入自己机器的1C:\Users\OrangeSu(这里为你的用户名) 看看该文件夹下有没有: .ssh文件夹 下面就说下怎么配置SSH Key。 生成新的SSH Key配置生成文件在Git Bash执行代码：1ssh-keygen -t -rsa -C &quot;hzpengcheng@gmail.com&quot; 将邮箱改为你自己的邮箱。成功后会生成两个文件id_rsa以及id_rsa.pub 添加SSH Key到Git hub在Git hub右上角，点击头像，选择 Settings -&gt; SSH and GPG keys -&gt; New SSH key 复制你的id_rsa.pub里的内容到”Key”中完成！！ 搭建博客安装Hexo在本地新建一个Blog文件夹，文件右键，选择Git BashHere。（如果没有，是因为你安装Git时没有选择添加右键的选项）解决方法 输入指令安装hexo：1npm install -g hexo 安装完成后，可在git bash中输入hexo测试是否安装成功。 接着初始化Hexo：1hexo init hexo 初始化成功会显示Start blogging with Hexo!这时在你刚才创建的Blog文件夹里面会多出一个hexo文件夹 进入hexo目录中，输入命令npm install，安装依赖文件以及部署形成文件进入目录：1cd hexo 安装：1npm install 部署：1hexo generate 开启服务1hexo server 可以简写为hexo s 打开浏览器输入 http://localhost:4000/ 就可以看到默认的博客]]></content>
+      <categories>
+        <category>环境搭建</category>
+      </categories>
+      <tags>
+        <tag>GitHub</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于VS Code报错“扩展主机意外终止”的解决办法]]></title>
     <url>%2F2017%2F10%2F01%2FThird_Article%2F</url>
     <content type="text"><![CDATA[问题这是很久前遇到的问题了，写下来方便后面遇到同样问题的朋友参考下，因为我本人在百度和Google上查了很久才解决掉。 问题描述一张图片足矣: 解决线索最后在Github上找到了一些线索，就实践了下，结果意外地成功了，感谢微软的员工joaomoreno。附上他的解决方法：链接 解决办法我给出我最后的解决办法：重装git。如果你发现自己没git，那就去下载一个。下载地址 最后后面我偶然发现，在一个帖子里，有一个用户和我同样的操作，证明是可行的。链接]]></content>
