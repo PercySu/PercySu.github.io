@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://percysu.com/"/>
-  <updated>2017-12-19T08:50:59.584Z</updated>
+  <updated>2018-02-22T14:39:25.979Z</updated>
   <id>http://percysu.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows下输入正确密码无法进入的解决办法</title>
+    <link href="http://percysu.com/2018/02/22/Ffth_Article/"/>
+    <id>http://percysu.com/2018/02/22/Ffth_Article/</id>
+    <published>2018-02-22T14:06:23.000Z</published>
+    <updated>2018-02-22T14:39:25.979Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><blockquote><p>开机后输入密码无法进入桌面，<font color="red">显示无网络状态（右下角网络处为红叉）</font>，进入死循环重启，或者是显示<font color="red">其他用户，会出现异常的账户和密码输入框。</font></p></blockquote><h1 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h1><blockquote><p>系统无法连接到sens服务导致。</p></blockquote><h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><h2 id="进入“安全模式”"><a href="#进入“安全模式”" class="headerlink" title="进入“安全模式”"></a>进入“安全模式”</h2><p>win7和win8都是开机按F8，但对于win10不适用。 </p><p>对于win10：<br><a id="more"></a></p><h3 id="能进到登录界面"><a href="#能进到登录界面" class="headerlink" title="能进到登录界面"></a>能进到登录界面</h3><p>如果能进系统到登录界面，按以下步骤可以进入“安全模式”：</p><ol><li>按住<code>“Shift”</code>，然后点击<code>电源按钮</code> -&gt; <code>重启</code></li><li>重启后进入蓝色界面，单击<code>疑难解答</code></li><li>点击<code>高级选项</code></li><li>点<code>启动设置</code></li><li>点击右下角的<code>启动</code>按钮，重启后选择<code>4</code>就进入了“安全模式”</li></ol><p>再给出能进入系统的进入安全模式的方法：</p><ol><li><code>win+r</code>会出现运行框，输入<code>msconfig</code></li><li>选择<code>引导</code>，将<code>安全引导</code>打上勾即可。（但要注意，如果要退出安全模式，需要在安全模式下，同样步骤将钩去掉）</li></ol><h3 id="不能进入系统"><a href="#不能进入系统" class="headerlink" title="不能进入系统"></a>不能进入系统</h3><p>很多时候电脑坏掉，需要在安全模式下进行查错解决，但是如何进入安全模式呢?</p><pre><code>在开机出现`微软`图标下面有转圈的小点时，立即关掉电源，如此两次，第三次启动时就进入安全模式了。</code></pre><h2 id="进入”命令提示符-管理员）“"><a href="#进入”命令提示符-管理员）“" class="headerlink" title="进入”命令提示符(管理员）“"></a>进入”命令提示符(管理员）“</h2><p><code>开始</code> -&gt; <code>所有应用</code> -&gt; <code>Windows系统</code> -&gt; <code>命令与提示符</code> -&gt; <code>右键，选以管理员方式运行</code></p><p>或者</p><p><code>win+s</code> -&gt; <code>输入cmd</code> -&gt; <code>在最佳匹配里的命令与提示符右键选以管理员方式运行</code></p><h2 id="输入命令"><a href="#输入命令" class="headerlink" title="输入命令"></a>输入命令</h2><p>在<code>C:\windows\system32&gt;</code>后面接着输入:<br><code>netsh winsock reset catalog</code>后按回车键。</p><p>这时会提示:“成功重置winsock目录,你必须重新启动计算机才能完成重置”，重启电脑后就可以正常使用了。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;开机后输入密码无法进入桌面，&lt;font color=&quot;red&quot;&gt;显示无网络状态（右下角网络处为红叉）&lt;/font&gt;，进入死循环重启，或者是显示&lt;font color=&quot;red&quot;&gt;其他用户，会出现异常的账户和密码输入框。&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;问题原因&quot;&gt;&lt;a href=&quot;#问题原因&quot; class=&quot;headerlink&quot; title=&quot;问题原因&quot;&gt;&lt;/a&gt;问题原因&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;系统无法连接到sens服务导致。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;解决办法&quot;&gt;&lt;a href=&quot;#解决办法&quot; class=&quot;headerlink&quot; title=&quot;解决办法&quot;&gt;&lt;/a&gt;解决办法&lt;/h1&gt;&lt;h2 id=&quot;进入“安全模式”&quot;&gt;&lt;a href=&quot;#进入“安全模式”&quot; class=&quot;headerlink&quot; title=&quot;进入“安全模式”&quot;&gt;&lt;/a&gt;进入“安全模式”&lt;/h2&gt;&lt;p&gt;win7和win8都是开机按F8，但对于win10不适用。 &lt;/p&gt;
+&lt;p&gt;对于win10：&lt;br&gt;
+    
+    </summary>
+    
+      <category term="问题解决" scheme="http://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+    
+    
+      <category term="Windows" scheme="http://percysu.com/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows下使用GitHub+Hexo搭建个人博客</title>
