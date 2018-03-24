@@ -109,7 +109,7 @@
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133731.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_134319.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_135300.png">
-<meta property="og:updated_time" content="2017-12-19T08:50:59.584Z">
+<meta property="og:updated_time" content="2018-03-24T05:07:59.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows下使用GitHub+Hexo搭建个人博客">
 <meta name="twitter:description" content="首先，资料参考自http://blog.csdn.net/wx_jin/article/details/51027783，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。—特此说明 准备工作安装Node.js下载地址：Node.js下载地址可以通过node -v命令测试是否安装成功。具体操作：①win+r –&amp;gt;  ②cmd  –&amp;gt;  ③node -v如果成功的">
@@ -639,7 +639,7 @@
 <h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>去Github官网注册即可。<br>注册完成之后添加SSH Key。<br>这个 SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交。<br>进入自己机器的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\Users\OrangeSu(这里为你的用户名)</div></pre></td></tr></table></figure></p>
 <p>看看该文件夹下有没有: <code>.ssh</code>文件夹<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_104323.png" alt="Eleventh"></p>
 <p>下面就说下怎么配置SSH Key。 </p>
-<h2 id="生成新的SSH-Key配置"><a href="#生成新的SSH-Key配置" class="headerlink" title="生成新的SSH Key配置"></a>生成新的SSH Key配置</h2><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><p>在Git Bash执行代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t -rsa -C &quot;hzpengcheng@gmail.com&quot;</div></pre></td></tr></table></figure></p>
+<h2 id="生成新的SSH-Key配置"><a href="#生成新的SSH-Key配置" class="headerlink" title="生成新的SSH Key配置"></a>生成新的SSH Key配置</h2><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><p>在Git Bash执行代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C &quot;hzpengcheng@gmail.com&quot;</div></pre></td></tr></table></figure></p>
 <p>将邮箱改为你自己的邮箱。<br>成功后会生成两个文件<code>id_rsa</code>以及<code>id_rsa.pub</code></p>
 <h3 id="添加SSH-Key到GitHub"><a href="#添加SSH-Key到GitHub" class="headerlink" title="添加SSH Key到GitHub"></a>添加SSH Key到GitHub</h3><p>在Git hub右上角，点击头像，选择 Settings -&gt; SSH and GPG keys -&gt; New SSH key<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_121039.png" alt="Twelfth"></p>
 <blockquote>
