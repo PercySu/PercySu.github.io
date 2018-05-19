@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://percysu.com/2018/05/19/Seventh_Article/</loc>
+    <lastmod>2018-05-19T11:27:29.063Z</lastmod>
+    <data>
+        <display>
+        <title>CMake + OpenCV3.4.1 + VS2017静态编译</title>
+        <pubTime>2018-05-19T11:25:00.000Z</pubTime>
+        
+        <tag>OpenCV</tag>
+         
+         
+           
+             
+              <breadCrumb title="环境搭建" url="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://percysu.com/2018/03/12/Sixth_Article/</loc>
     <lastmod>2018-04-02T05:22:35.905Z</lastmod>
     <data>
