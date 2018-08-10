@@ -4,6 +4,50 @@
 
     
   <url>
+    <loc>http://percysu.com/2018/08/10/V2Ray/</loc>
+    <lastmod>2018-08-10T03:08:10.593Z</lastmod>
+    <data>
+        <display>
+        <title>Windows下使用GitHub+Hexo搭建个人博客</title>
+        <pubTime>2018-08-09T19:10:25.000Z</pubTime>
+        
+        <tag>V2Ray</tag>
+         
+        <tag>科学上网</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://percysu.com/2018/03/12/SSR/</loc>
+    <lastmod>2018-08-10T03:07:57.951Z</lastmod>
+    <data>
+        <display>
+        <title>搭建SSR服务器附带锐速加速</title>
+        <pubTime>2018-03-11T18:59:45.000Z</pubTime>
+        
+        <tag>科学上网</tag>
+         
+        <tag>ShadowSocks</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="http://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://percysu.com/2018/05/19/Seventh_Article/</loc>
     <lastmod>2018-05-19T11:37:57.715Z</lastmod>
     <data>
@@ -17,26 +61,6 @@
            
              
               <breadCrumb title="环境搭建" url="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://percysu.com/2018/03/12/Sixth_Article/</loc>
-    <lastmod>2018-04-02T05:22:35.905Z</lastmod>
-    <data>
-        <display>
-        <title>搭建SSR服务器附带锐速加速</title>
-        <pubTime>2018-03-11T18:59:45.000Z</pubTime>
-        
-        <tag>ShadowSocks</tag>
-         
-         
-           
-             
-              <breadCrumb title="服务器" url="http://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
           
         </display>
     </data>

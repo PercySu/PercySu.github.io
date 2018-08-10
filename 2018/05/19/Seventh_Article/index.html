@@ -547,17 +547,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/05/19/Seventh_Article/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/05/19/Seventh_Article/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -713,7 +702,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/12/Sixth_Article/" rel="next" title="搭建SSR服务器附带锐速加速">
+              <a href="/2018/03/12/SSR/" rel="next" title="搭建SSR服务器附带锐速加速">
                 <i class="fa fa-chevron-left"></i> 搭建SSR服务器附带锐速加速
               </a>
             
@@ -722,6 +711,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/10/V2Ray/" rel="prev" title="Windows下使用GitHub+Hexo搭建个人博客">
+                Windows下使用GitHub+Hexo搭建个人博客 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -757,12 +750,7 @@
           
   <div class="comments" id="comments">
     
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="vcomments"></div>
     
   </div>
 
@@ -814,7 +802,7 @@
             
               <a href="/archives/">
             
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -836,7 +824,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -964,7 +952,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.0k字</span>
+  <span class="post-count">博客全站共6.5k字</span>
 </div>
 
 
@@ -1072,26 +1060,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://percysu-1.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://percysu.com/2018/05/19/Seventh_Article/';
-          this.page.identifier = '2018/05/19/Seventh_Article/';
-          this.page.title = 'CMake + OpenCV3.4.1 + VS2017静态编译';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://percysu-1.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -1107,8 +1075,27 @@
 
 
 
+  
 
 
+
+
+
+
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine@1.1.4/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    new Valine({
+        av: AV,
+        el: '#vcomments' ,
+        verify: false,
+        notify: false,
+        app_id: 'ssznAg5XCdsP4UGeKJBOLfg2-gzGzoHsz',
+        app_key: 'pbKHXfClPFiEASG6EWrADKcp',
+        placeholder: '来，讲一句！'
+    });
+  </script>
 
 
 
