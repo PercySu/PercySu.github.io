@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://percysu.com/2018/03/12/SSR/</loc>
+    
+    <lastmod>2018-10-08T04:59:35.415Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://percysu.com/2018/08/10/V2Ray/</loc>
     
     <lastmod>2018-08-28T07:26:52.158Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>http://percysu.com/about/index.html</loc>
     
     <lastmod>2018-08-10T03:25:32.876Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://percysu.com/2018/03/12/SSR/</loc>
-    
-    <lastmod>2018-08-10T03:07:57.952Z</lastmod>
     
   </url>
   
