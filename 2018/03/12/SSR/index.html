@@ -92,7 +92,7 @@
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-37-02.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-50-53.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-38-40.png">
-<meta property="og:updated_time" content="2018-10-08T04:59:35.415Z">
+<meta property="og:updated_time" content="2018-10-08T05:10:18.485Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建SSR服务器附带锐速加速">
 <meta name="twitter:description" content="引言SSR是shadowsocks的升级版，加入了参数混淆的功能，在这里我们只使用它的代理功能。 购买VPS服务器个人推荐：VULTR你也可以选择：搬瓦工 账户注册直接：Create Account注册账号。 充值进入”Billing“选“Alipay”就可以使用支付宝进行充值。vultr的服务是按时间收费的，你当你租了服务器之后不管你用没用它都会扣费。在这里，我充值了$25。 购买服务器点击“S">
@@ -568,7 +568,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,203
+                  1,204
                 </span>
               
 
@@ -642,26 +642,13 @@
 <p>CentOS7更换内核：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh http://soft.91yun.org/ISO/Linux/CentOS/kernel/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force</span><br></pre></td></tr></table></figure></p>
 <p>更新完需重启机器,输入命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br></pre></td></tr></table></figure></p>
 <p>重启后重新ssh连接再输入锐速加速指令。</p>
-<h2 id="修改SSH端口"><a href="#修改SSH端口" class="headerlink" title="修改SSH端口"></a>修改SSH端口</h2><p>SSH默认端口为22，容易被人破解和攻击，建议修改，此处系统为<em>CentOS6</em></p>
-<ol>
-<li>编辑配置文件：默认端口为22，并且被注释掉，去掉#，将22改为一个五位数，如：22222<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<h2 id="修改SSH端口"><a href="#修改SSH端口" class="headerlink" title="修改SSH端口"></a>修改SSH端口</h2><p>SSH默认端口为22，容易被人破解和攻击，建议修改，此处系统为<em>CentOS6</em><br>1.编辑配置文件：默认端口为22，并且被注释掉，去掉#，将22改为一个五位数，如：22222<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ssh/sshd_config</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-37-02.png" alt=""><br><img src="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-50-53.png" alt=""></p>
-<ol start="2">
-<li>在防火墙上开放端口<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 22222 -j ACCEPT</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<p>2.在防火墙上开放端口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 22222 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables-save</span><br></pre></td></tr></table></figure>
-<ol start="3">
-<li>检查端口是否开放<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -nL --line-number</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<p>3.检查端口是否开放<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iptables -nL --line-number</span><br></pre></td></tr></table></figure></p>
 <p><img src="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-38-40.png" alt=""></p>
-<ol start="4">
-<li>重启SSH服务，并重新连接<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/sshd restart</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
+<p>4.重启SSH服务，并重新连接<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/sshd restart</span><br></pre></td></tr></table></figure></p>
 <h1 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h1><p>Windows、Android、Mac版：<a href="https://pan.baidu.com/s/1GmrHCpSjJTCQkEjkpsiuTg" target="_blank" rel="noopener">下载</a> 密码: 17gq<br>IOS:美区账号查找:”<strong>Potatso Lite</strong>“或者”<strong>Shadowrocket</strong>(PP助手上也有)”</p>
 
       
