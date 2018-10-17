@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="此心光明，亦复何言？">
 <meta property="og:description" content="前两天，我的酸酸乳(SSR)服务器被墙了，于是我查询资料在VPS上搭建了V2Ray平台来科学上网。V2Ray更像是一个工具箱，集成了多种多样的协议和功能：   更完善的协议：V2Ray 使用了新的自行研发的 VMess 协议，改正了 Shadowsocks一些已有的缺点，更难被墙检测到； 更强大的性能: 网络性能更好，具体数据可以看 V2Ray 官方博客 更丰富的功能：以下是部分V2Ray的功能">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-28T07:26:52.158Z">
+<meta property="og:updated_time" content="2018-10-17T07:00:12.022Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="V2Ray,新一代科学上网神器">
 <meta name="twitter:description" content="前两天，我的酸酸乳(SSR)服务器被墙了，于是我查询资料在VPS上搭建了V2Ray平台来科学上网。V2Ray更像是一个工具箱，集成了多种多样的协议和功能：   更完善的协议：V2Ray 使用了新的自行研发的 VMess 协议，改正了 Shadowsocks一些已有的缺点，更难被墙检测到； 更强大的性能: 网络性能更好，具体数据可以看 V2Ray 官方博客 更丰富的功能：以下是部分V2Ray的功能">
@@ -612,10 +612,11 @@
 <li>数据包伪装：类似于 Shadowsocks-rss 的混淆，另外对于 mKCP 的数据包也可伪装，伪装常见流量，令识别更困难</li>
 <li>WebSocket 协议：可以 PaaS 平台搭建V2Ray，通过 WebSocket 代理。也可以通过它使用 CDN 中转，抗封锁效果更好</li>
 <li>Mux:多路复用，进一步提高科学上网的并发性能<a id="more"></a>
-<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1>我只是实现了V2Ray的一些简单功能，有：VMess协议，Shadowsocks协议，mKCP，Mux和国内直连。想要了解更多，可以参考：<a href="https://toutyrater.github.io/" target="_blank" rel="noopener">点我</a>。</li>
+</li>
 </ul>
 </li>
 </ul>
+<h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>我只是实现了V2Ray的一些简单功能，有：VMess协议，Shadowsocks协议，mKCP，Mux和国内直连。想要了解更多，可以参考：<a href="https://toutyrater.github.io/" target="_blank" rel="noopener">点我</a>。</p>
 <h1 id="配置V2Ray"><a href="#配置V2Ray" class="headerlink" title="配置V2Ray"></a>配置V2Ray</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>从软件上，V2Ray不区分服务器版和客户端版，也就是说客户端和服务器运行的V2Ray其实是一个软件，区别在于它们的配置文件不同，其实就是客户端的config.json和服务器的config.json里面的内容不同罢了。我这里客户端为PC（Windows），服务器端为Linux。</p>
 <h2 id="Linux版本"><a href="#Linux版本" class="headerlink" title="Linux版本"></a>Linux版本</h2><p>VPS系统建议选择<code>Debian 8.x及以上</code>或者<code>Ubuntu 16.04及以上</code>。我用的是Vultr + Debian 8 x64 + Los Angeles 。VPS服务器购买参见我的另一篇文章<a href="http://percysu.com/2018/03/12/Sixth_Article/">搭建SSR服务器附带锐速加速</a>。</p>
 <h2 id="客户端安装"><a href="#客户端安装" class="headerlink" title="客户端安装"></a>客户端安装</h2><p>点<a href="https://github.com/v2ray/v2ray-core/releases" target="_blank" rel="noopener">这里</a>下载V2Ray的Windows压缩包，根据电脑系统位数选择<code>v2ray-windows-32.zip</code>或<code>v2ray-windows-64.zip</code>。下载解压，会有两个重要文件：<br><strong>①config.json</strong>：它就是客户端配置文件，等会就是将它的内容进行改写。<br><strong>②v2ray.exe</strong>：是一个命令行程序，启动后可以看到命令行界面。（相似的有：wv2ray.exe 是一个后台程序，没有界面，会在后台自动运行。）<br>至此，客户端安装好了，我们需要对config.json进行改写，我放在后面写。</p>
