@@ -1879,7 +1879,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5b6e79;
+  background: #7752ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2722,4 +2722,10 @@ embed {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+* {
+  cursor: url("http://ox33lq08p.bkt.clouddn.com/ooopic_1539948704.ico"), auto !important;
+}
+:active {
+  cursor: url("http://ox33lq08p.bkt.clouddn.com/ooopic_1539948720.ico"), auto !important;
 }
