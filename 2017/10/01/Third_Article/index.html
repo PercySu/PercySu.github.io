@@ -960,6 +960,8 @@ setInterval("createtime()",250);
 
 
 
+  
+
 
 
 
@@ -985,6 +987,11 @@ setInterval("createtime()",250);
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -1046,8 +1053,8 @@ setInterval("createtime()",250);
     });
     new Valine({
         el: '#comments' ,
-        verify: true,
-        notify: true,
+        verify: false,
+        notify: false,
         appId: 'tTM0sNl78guxgzSLUln4ltye-gzGzoHsz',
         appKey: 'T9OslWqLhsVj6CCqLPrvxOmI',
         placeholder: '畅所欲言！',
@@ -1404,6 +1411,15 @@ setInterval("createtime()",250);
   
 
   
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#更多");
+  
+  </script>
+
 
   
   <style>
