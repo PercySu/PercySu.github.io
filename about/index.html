@@ -183,6 +183,8 @@
 <meta name="twitter:description" content="关于我一个无趣的，脱离了高级趣味的人。">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="此心光明，亦复何言？" type="application/atom+xml" />
 
@@ -869,17 +871,18 @@ setInterval("createtime()",250);
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: 'fb43f57c3448539394d8',
           clientSecret: 'c0fe891e88fa2b70d6cb80639107db709f8a8a83',
           repo: 'percysu.github.io',
           owner: 'percysu',
-          admin: ['github帐号'],
-          id: location.pathname,
+          admin: ['percysu'],
+          id: md5(window.location.pathname),
           distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')           
+        gitalk.render('gitalk-container')
        </script>
 
   
