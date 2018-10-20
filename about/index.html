@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -145,7 +145,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '6.4.2',
     sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -182,8 +182,6 @@
 <meta name="twitter:title" content="缘，妙不可言">
 <meta name="twitter:description" content="关于我一个无趣的，脱离了高级趣味的人。">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="此心光明，亦复何言？" type="application/atom+xml" />
@@ -333,7 +331,7 @@
           
           <li class="menu-item menu-item-music">
     <a href="/music/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-music"></i> <br />music</a>
+      <i class="menu-item-icon fa fa-fw fa-music"></i> <br />音乐</a>
   </li>
         
         
@@ -479,11 +477,8 @@
           
 
   
-    <div class="comments" id="comments">
-    </div>
+
   
-
-
 
         </div>
         
@@ -699,7 +694,7 @@
 
 
 
-  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a></div>
+  <div class="theme-info">主题 – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Gemini</a></div>
 
 
 
@@ -870,32 +865,22 @@ setInterval("createtime()",250);
 
 
 
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-  
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(function (item) {
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'tTM0sNl78guxgzSLUln4ltye-gzGzoHsz',
-        appKey: 'T9OslWqLhsVj6CCqLPrvxOmI',
-        placeholder: '畅所欲言！',
-        avatar:'mm',
-        meta:guest,
-        pageSize:'10' || 10,
-        visitor: false
-    });
-  </script>
 
 
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'fb43f57c3448539394d8',
+          clientSecret: 'c0fe891e88fa2b70d6cb80639107db709f8a8a83',
+          repo: 'percysu.github.io',
+          owner: 'percysu',
+          admin: ['github帐号'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
