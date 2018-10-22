@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://percysu.com/music/index.html</loc>
+    
+    <lastmod>2018-10-22T17:02:07.176Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://percysu.com/2018/08/10/V2Ray/</loc>
     
     <lastmod>2018-10-22T15:42:36.386Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://percysu.com/2018/05/19/CMake_OpenCV/</loc>
     
     <lastmod>2018-10-21T15:45:42.907Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://percysu.com/music/index.html</loc>
-    
-    <lastmod>2018-10-20T23:23:11.746Z</lastmod>
     
   </url>
   
