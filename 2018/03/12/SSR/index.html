@@ -183,7 +183,7 @@
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-37-02.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-50-53.png">
 <meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-10-08_12-38-40.png">
-<meta property="og:updated_time" content="2018-10-08T05:10:18.485Z">
+<meta property="og:updated_time" content="2018-10-22T18:40:08.924Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="搭建SSR服务器附带锐速加速">
 <meta name="twitter:description" content="引言SSR是shadowsocks的升级版，加入了参数混淆的功能，在这里我们只使用它的代理功能。 购买VPS服务器个人推荐：VULTR你也可以选择：搬瓦工 账户注册直接：Create Account注册账号。 充值进入”Billing“选“Alipay”就可以使用支付宝进行充值。vultr的服务是按时间收费的，你当你租了服务器之后不管你用没用它都会扣费。在这里，我充值了$25。 购买服务器点击“S">
@@ -532,7 +532,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.2k</span>
+                <span title="本文字数">2.9k</span>
               
 
               
@@ -588,7 +588,7 @@
 <h2 id="安装完成"><a href="#安装完成" class="headerlink" title="安装完成"></a>安装完成</h2><p>耐心等待安装，安装完会显示SSR的配置信息，记下来。<br><img src="http://ox33lq08p.bkt.clouddn.com/Snipaste_2018-03-12_09-57-55.png" alt=""><br>至此，你的SSR服务器就搭建好了。你可以通过服务器的IP，端口和密码去科学上网了。</p>
 <h1 id="非必要"><a href="#非必要" class="headerlink" title="非必要"></a>非必要</h1><h2 id="多用户配置"><a href="#多用户配置" class="headerlink" title="多用户配置"></a>多用户配置</h2><p>你的ssr服务器现在是让用户都通过同一个密码和端口使用。如果你想让多个端口对应多个密码，就要进行多用户配置。<br>ssh登录你的ssr服务器，输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/shadowsocks.json</span><br></pre></td></tr></table></figure></p>
 <p>说一句如果你觉得每次ssh时密码输入很麻烦，这个密码可以改的，当ssh连接上后，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd root</span><br></pre></td></tr></table></figure></p>
-<p>修改登录密码。<br>跑题了。<br><strong>多用户配置实例：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;server&quot;:&quot;0.0.0.0&quot;,</span><br><span class="line">&quot;server_ipv6&quot;: &quot;[::]&quot;,</span><br><span class="line">&quot;local_address&quot;:&quot;127.0.0.1&quot;,</span><br><span class="line">&quot;local_port&quot;:1080,</span><br><span class="line">&quot;port_password&quot;:&#123;</span><br><span class="line">    &quot;8989&quot;:&quot;password1&quot;,     #这里是8989端口对应一个密码</span><br><span class="line">    &quot;8990&quot;:&quot;password2&quot;,</span><br><span class="line">    &quot;8991&quot;:&quot;password3&quot;</span><br><span class="line">&#125;,</span><br><span class="line">&quot;timeout&quot;:300,</span><br><span class="line">&quot;method&quot;:&quot;aes-256-cfb&quot;,</span><br><span class="line">&quot;protocol&quot;: &quot;origin&quot;,</span><br><span class="line">&quot;protocol_param&quot;: &quot;&quot;,</span><br><span class="line">&quot;obfs&quot;: &quot;plain&quot;,</span><br><span class="line">&quot;obfs_param&quot;: &quot;&quot;,</span><br><span class="line">&quot;redirect&quot;: &quot;&quot;,</span><br><span class="line">&quot;dns_ipv6&quot;: false,</span><br><span class="line">&quot;fast_open&quot;: false,</span><br><span class="line">&quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>修改登录密码。<br>跑题了。<br><strong>多用户配置实例：</strong><br><figure class="highlight"><figcaption><span>/etc/shadowsocks.json</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"><span class="attr">"server"</span>:<span class="string">"0.0.0.0"</span>,</span><br><span class="line"><span class="attr">"server_ipv6"</span>: <span class="string">"[::]"</span>,</span><br><span class="line"><span class="attr">"local_address"</span>:<span class="string">"127.0.0.1"</span>,</span><br><span class="line"><span class="attr">"local_port"</span>:<span class="number">1080</span>,</span><br><span class="line"><span class="attr">"port_password"</span>:&#123;</span><br><span class="line">    "8989":"password1",     #这里是8989端口对应一个密码</span><br><span class="line">    "8990":"password2",</span><br><span class="line">    "8991":"password3"</span><br><span class="line">&#125;,</span><br><span class="line">"timeout":300,</span><br><span class="line">"method":"aes-256-cfb",</span><br><span class="line">"protocol": "origin",</span><br><span class="line">"protocol_param": "",</span><br><span class="line">"obfs": "plain",</span><br><span class="line">"obfs_param": "",</span><br><span class="line">"redirect": "",</span><br><span class="line">"dns_ipv6": false,</span><br><span class="line">"fast_open": false,</span><br><span class="line">"workers": 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="防火墙设置"><a href="#防火墙设置" class="headerlink" title="防火墙设置"></a>防火墙设置</h3><p>这时候，你新添加的端口还无法使用。<br>关闭防火墙：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service iptables stop</span><br></pre></td></tr></table></figure></p>
 <p><strong>在IPtables防火墙中开放特定端口:</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/sbin/iptables -I INPUT -p tcp –-dport 1314 -j ACCEPT</span><br></pre></td></tr></table></figure></p>
 <p>这里的1314是我随便输的，这里的值是你shadowsocks.json里多用户配置里的端口号。</p>
@@ -903,7 +903,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">23k</span>
+    <span title="站点总字数">22k</span>
   
 
   
@@ -912,7 +912,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">21 分钟</span>
+    <span title="站点阅读时长">20 分钟</span>
   
 </div>
 
