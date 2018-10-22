@@ -169,42 +169,23 @@
 
 
 
-  <meta name="description" content="首先，资料参考自http://blog.csdn.net/wx_jin/article/details/51027783，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。—特此说明 准备工作安装Node.js下载地址：Node.js下载地址可以通过node -v命令测试是否安装成功。具体操作：①win+r –&amp;gt;  ②cmd  –&amp;gt;  ③node -v如果成功的">
-<meta name="keywords" content="GitHub,Hexo">
+  <meta name="description" content="必读 要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。如果你有简便的方法请告诉我。配置Python开发环境   点击扩展,搜索python,选择第一个，点击安装。">
+<meta name="keywords" content="VS Code,Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows下使用GitHub+Hexo搭建个人博客">
-<meta property="og:url" content="http://percysu.com/2017/12/18/Fourth_Article/index.html">
+<meta property="og:title" content="VS Code配置Python开发环境">
+<meta property="og:url" content="http://percysu.com/2017/09/29/VSC_Py/index.html">
 <meta property="og:site_name" content="此心光明，亦复何言？">
-<meta property="og:description" content="首先，资料参考自http://blog.csdn.net/wx_jin/article/details/51027783，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。—特此说明 准备工作安装Node.js下载地址：Node.js下载地址可以通过node -v命令测试是否安装成功。具体操作：①win+r –&amp;gt;  ②cmd  –&amp;gt;  ③node -v如果成功的">
+<meta property="og:description" content="必读 要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。如果你有简便的方法请告诉我。配置Python开发环境   点击扩展,搜索python,选择第一个，点击安装。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_235417.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002403.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002448.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002637.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002720.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002741.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002813.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003140.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003203.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_092042.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_104323.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_121039.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_124953.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125249.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125747.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/20160331183055832.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_132108.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_132713.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133540.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133706.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133731.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_134319.png">
-<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_135300.png">
-<meta property="og:updated_time" content="2018-03-24T06:57:55.661Z">
+<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_203204.png">
+<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_204153.png">
+<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_204213.png">
+<meta property="og:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_211318.png">
+<meta property="og:updated_time" content="2018-10-21T15:46:49.678Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows下使用GitHub+Hexo搭建个人博客">
-<meta name="twitter:description" content="首先，资料参考自http://blog.csdn.net/wx_jin/article/details/51027783，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。—特此说明 准备工作安装Node.js下载地址：Node.js下载地址可以通过node -v命令测试是否安装成功。具体操作：①win+r –&amp;gt;  ②cmd  –&amp;gt;  ③node -v如果成功的">
-<meta name="twitter:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_235417.png">
+<meta name="twitter:title" content="VS Code配置Python开发环境">
+<meta name="twitter:description" content="必读 要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。如果你有简便的方法请告诉我。配置Python开发环境   点击扩展,搜索python,选择第一个，点击安装。">
+<meta name="twitter:image" content="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_203204.png">
 
 
 
@@ -213,7 +194,7 @@
 
 
 
-  <link rel="canonical" href="http://percysu.com/2017/12/18/Fourth_Article/"/>
+  <link rel="canonical" href="http://percysu.com/2017/09/29/VSC_Py/"/>
 
 
 
@@ -223,7 +204,7 @@
   };
 </script>
 
-  <title>Windows下使用GitHub+Hexo搭建个人博客 | 此心光明，亦复何言？</title>
+  <title>VS Code配置Python开发环境 | 此心光明，亦复何言？</title>
   
 
 
@@ -331,7 +312,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">3</span></a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">4</span></a>
   </li>
         
         
@@ -339,7 +320,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">8</span></a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">9</span></a>
   </li>
         
         
@@ -347,15 +328,15 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">10</span></a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">11</span></a>
   </li>
         
         
         
           
-          <li class="menu-item menu-item-music">
-    <a href="/music/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-music"></i> <br />音乐</a>
+          <li class="menu-item menu-item-notes">
+    <a href="/categories/notes/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-spinner"></i> <br />拾遗记</a>
   </li>
         
         
@@ -445,7 +426,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://percysu.com/2017/12/18/Fourth_Article/">
+    <link itemprop="mainEntityOfPage" href="http://percysu.com/2017/09/29/VSC_Py/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PercySu">
@@ -462,7 +443,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Windows下使用GitHub+Hexo搭建个人博客
+          <h1 class="post-title" itemprop="name headline">VS Code配置Python开发环境
               
             
           </h1>
@@ -487,7 +468,7 @@
                 
               
 
-              <time title="创建时间：2017-12-18 23:46:41" itemprop="dateCreated datePublished" datetime="2017-12-18T23:46:41+08:00">2017-12-18</time>
+              <time title="创建时间：2017-09-29 19:15:57" itemprop="dateCreated datePublished" datetime="2017-09-29T19:15:57+08:00">2017-09-29</time>
             
 
             
@@ -541,7 +522,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">3.2k</span>
+                <span title="本文字数">1.3k</span>
               
 
               
@@ -555,7 +536,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">3 分钟</span>
+                <span title="阅读时长">1 分钟</span>
               
             </div>
           
@@ -575,56 +556,19 @@
       
 
       
-        <p>首先，资料参考自<a href="http://blog.csdn.net/wx_jin/article/details/51027783" target="_blank" rel="noopener">http://blog.csdn.net/wx_jin/article/details/51027783</a>，我对其中有些内容进行了补充与修改，因为其中有些内容过时了，有些内容有纰漏。—特此说明</p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js下载地址</a><br>可以通过node -v命令测试是否安装成功。<br>具体操作：<code>①win+r</code> –&gt;  <code>②cmd</code>  –&gt;  <code>③node -v</code><br>如果成功的话，是这样：<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_235417.png" alt="First"><br><strong>PS:<font color="ff0000">在这里我要安利一个软件，它可以用来代替<code>cmd</code>，这个软件叫做<code>cmder</code>，十分良心，附上下载地址：<a href="http://cmder.net/" target="_blank" rel="noopener">cmder下载地址</a></font></strong><br><a id="more"></a></p>
-<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>下载地址：<a href="https://git-scm.com/" target="_blank" rel="noopener">Git下载地址</a><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002403.png" alt="Second"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002448.png" alt="Third"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002637.png" alt="Fourth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002720.png" alt="Fifth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002741.png" alt="Sixth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_002813.png" alt="Seventh"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003140.png" alt="Eighth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_003203.png" alt="Ninth"><br>可以通过git –-version的命令来测试git是否安装成功<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_092042.png" alt="Tenth"></p>
-<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>去Github官网注册即可。<br>注册完成之后添加SSH Key(教程在下面)。<br>这个 SSH Key是一个认证，让github识别绑定这台机器，允许这台机器提交。<br>进入自己机器的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\OrangeSu(这里为你的用户名)</span><br></pre></td></tr></table></figure></p>
-<p>看看该文件夹下有没有: <code>.ssh</code>文件夹<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_104323.png" alt="Eleventh"></p>
-<p>下面就说下怎么配置SSH Key。 </p>
-<h2 id="生成新的SSH-Key配置"><a href="#生成新的SSH-Key配置" class="headerlink" title="生成新的SSH Key配置"></a>生成新的SSH Key配置</h2><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><p>在Git Bash执行代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;hzpengcheng@gmail.com&quot;</span><br></pre></td></tr></table></figure></p>
-<p>将邮箱改为你自己的邮箱。<br>成功后会生成两个文件<code>id_rsa</code>以及<code>id_rsa.pub</code></p>
-<h3 id="添加SSH-Key到GitHub"><a href="#添加SSH-Key到GitHub" class="headerlink" title="添加SSH Key到GitHub"></a>添加SSH Key到GitHub</h3><p>在Git hub右上角，点击头像，选择 Settings -&gt; SSH and GPG keys -&gt; New SSH key<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_121039.png" alt="Twelfth"></p>
-<blockquote>
-<p>复制你的<code>id_rsa.pub</code>里的内容到”Key”中</p>
-</blockquote>
-<p>完成！</p>
-<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><p> 在本地新建一个文件夹，取名为Blog，文件右键，选择Git BashHere。<br>（如果没有，是因为你安装Git时没有选择添加右键的选项）<a href="https://www.zhihu.com/question/48091139/answer/109144599" target="_blank" rel="noopener">解决方法</a></p>
-<p>输入指令安装hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p>安装完成后，可在git bash中输入<code>hexo</code>测试是否安装成功。<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_124953.png" alt="Thirteenth"></p>
-<h1 id="设置hexo"><a href="#设置hexo" class="headerlink" title="设置hexo"></a>设置hexo</h1><p>接着初始化Hexo：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init hexo</span><br></pre></td></tr></table></figure></p>
-<p>初始化成功会显示<code>Start blogging with Hexo!</code><br>这时在你刚才创建的Blog文件夹里面会多出一个hexo文件夹</p>
-<p>进入hexo目录中，输入命令<code>npm install</code>，安装依赖文件以及部署形成文件<br>进入目录：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd hexo</span><br></pre></td></tr></table></figure></p>
-<p>安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125249.png" alt="Fourteenth"></p>
-<p>开启服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server                     #简写 hexo s</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_125747.png" alt="Fifteenth"></p>
-<p>打开浏览器输入 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 就可以看到默认的博客(图片源于网络):<br><img src="http://ox33lq08p.bkt.clouddn.com/20160331183055832.png" alt="Sixteenth"></p>
-<font color="ff0000">ps:</font><font color="0099ff"><code>hexo s</code>只是开启了本地的服务，只能在自己机子上的4000端口可以看见效果，并未发布到git hub上，用来本地预览功能。</font>
-
-
-<h1 id="配置GitHubPage"><a href="#配置GitHubPage" class="headerlink" title="配置GitHubPage"></a>配置GitHubPage</h1><p>登录GitHub，点击”New repository”，新建仓库。<br>输入仓库名：你的GitHub名称.github.io<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_132108.png" alt="Seventeenth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_132713.png" alt="Eighteenth"></p>
-<font color="ff0000">ps:我看网上有人说创建名字一定要用你的github用户名，不然显示不出来。虽然我没试过，但是最好还是填你的用户名就好，免得出现不必要的错误。</font>
-
-
-<h1 id="启用GitHubPage"><a href="#启用GitHubPage" class="headerlink" title="启用GitHubPage"></a>启用GitHubPage</h1><p>选择仓库中的”Settings”,找到”GitHub Pages”,在”Source”中选择<code>master branch</code>,然后点击<code>save</code><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133540.png" alt="Nineteenth"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133706.png" alt="Twentieth"></p>
-<p>点击”save”后页面会自动刷新，再看”GitHub Pages”时，会新出现一行提示<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_133731.png" alt="Twenty-first"></p>
-<p>点击链接，会出现<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_134319.png" alt="Twenty-second"></p>
-<p>界面比较简陋，在”GitHub Pages”里面除了”Source”，还有一个”Theme Chooser”， 你可以在里面选择一个你喜欢的主题。<br>打开自己在github的静态网址，我的<a href="http://percysu.com/Percy.github.io/">http://percysu.com/Percy.github.io/</a>，你会发现，打开是你自己刚才选择静态站点模版。</p>
-<h1 id="将本地hexo项目托管到GitHub"><a href="#将本地hexo项目托管到GitHub" class="headerlink" title="将本地hexo项目托管到GitHub"></a>将本地hexo项目托管到GitHub</h1><p><strong>打开修改hexo目录下配置文件_config.yml</strong><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171219_135300.png" alt="Twenty-third"><br>编辑最后面的deploy属性，加入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">type: git</span><br><span class="line">repository: git@github.com:PercySu/Percy.github.io.git</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<p>type使用是git<br>repository属性改成你的仓库的地址<br>分支branch填写master</p>
-<font color="559900">注意:“冒号”后面要空一格再输入</font>
-
-<h1 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h1><p>网站的配置文件，你可以在这里配置一些基本信息，这里列举部分关键配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site</span><br><span class="line">title: 此行光明，亦复何言？ #网站的标题</span><br><span class="line">subtitle: 何不如笑傲风月，踏三山，伴红颜，此生无憾！ #副标题</span><br><span class="line">description: 世事一场大梦，人生几度秋凉？ #描述</span><br><span class="line">author: PercySu #作者信息</span><br><span class="line">avatar: /images/avatar.png #头像，图片位置在相应主题目录下的images</span><br><span class="line">language: zh-Hans #中文简体</span><br><span class="line">email: hzpengcheng@163.com</span><br><span class="line">timezone:</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next #配置主题，这里使用next主题</span><br><span class="line">stylus:</span><br><span class="line">  compress: true #自适应布局</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git #部署环境，基于hexo+githubpage,所以这里使用git。注意：不同版本的hexo，type有可能不同，3.x以后应使用git,具体参看官方文档</span><br><span class="line">  repository: git@github.com:username/username.github.io.git #git仓库地址，替换成你的username即可，其他保持不变，后面会提到如何创建git仓库</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>自己根据自己的需要修改。</p>
-<h1 id="安装hexo-deployer-git插件"><a href="#安装hexo-deployer-git插件" class="headerlink" title="安装hexo-deployer-git插件"></a>安装hexo-deployer-git插件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<h1 id="部署你本地的主题到github上"><a href="#部署你本地的主题到github上" class="headerlink" title="部署你本地的主题到github上"></a>部署你本地的主题到github上</h1><p>代码如下,每次修改本地文件都得执行一下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean                #简写 hexo c</span><br><span class="line">hexo generator            #简写 hexo g</span><br><span class="line">hexo deploy               #简写 hexo d</span><br></pre></td></tr></table></figure></p>
-<p><code>hexo clean</code> #清除缓存 网页正常情况下可以忽略此条命令<br><code>hexo g</code> #生成静态网页<br><code>hexo d</code> #开始部署</p>
-<p>大功告成！</p>
-<h1 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h1><p>环境虽然已经搭建好了，但是这只是个框架而已，你还没有往里面填东西。你可以自己选择主题，写文章，自己定义自己的Style。</p>
-<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><p>你得使用Markdown语法，很好学，不到半个小时你就能学会。<br><a href="http://blog.csdn.net/witnessai1/article/details/52551362" target="_blank" rel="noopener">Markdown语法手册</a><br><a href="https://www.zybuluo.com/cmd/" target="_blank" rel="noopener">CmdMarkdown下载</a></p>
-<h2 id="关于主题"><a href="#关于主题" class="headerlink" title="关于主题"></a>关于主题</h2><p>你可以从github上clone主题，进行个性化修改，我使用的是next主题<br><a href="http://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">修改教程</a></p>
-<h2 id="关于绑定域名"><a href="#关于绑定域名" class="headerlink" title="关于绑定域名"></a>关于绑定域名</h2><p><a href="http://blog.csdn.net/chwshuang/article/details/52350589" target="_blank" rel="noopener">教程</a></p>
+        <h3 id="必读"><a href="#必读" class="headerlink" title="必读"></a>必读</h3><ul>
+<li>要知道，VS Code推荐一个项目以文件夹方式打开，所以你的配置都是针对一个文件夹而言的。也就是说，如果你重新创建了一个文件夹来存放.py的文件，那么你就要重新配置task.json 和 launch.json文件。<del>如果你有简便的方法请告诉我。</del><h3 id="配置Python开发环境"><a href="#配置Python开发环境" class="headerlink" title="配置Python开发环境"></a>配置Python开发环境</h3></li>
+</ul>
+<ol>
+<li>点击<font color="#ff0000">扩展</font>,搜索<font color="#0099ff">python</font>,选择第一个，点击<font color="#0099ff">安装</font>。<a id="more"></a></li>
+<li>配置python路径： <font color="#0099fe" 左上角菜单="" --=""> 文件 –&gt; 首选项 –&gt; 设置 –&gt;</font>(此时会出现左右两栏，左边是默认设置，右边是用户设置，我们要在用户设置中输入来覆盖默认的设置)，在<font color="#ff0000">搜索栏</font>中输入<font color="#0099ff">pythonpath</font>,从左边复制粘贴到右边，将pythonpath中的值改为你的python的绝对路径：<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_203204.png" alt="second"></li>
+<li>打开一个文件夹，创建一个python文件，随便写点代码，按<font color="#ff0000"><strong>Ctrl + Shift + b</strong></font>运行程序。这时候会提示<font color="#ff0000"><strong><span style="border-bottom:2px dashed red;">配置生成任务</span></strong></font>。选择<font color="#0099ff">运行任意外部命令菜单</font>。<br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_204153.png" alt="third"><br><img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_204213.png" alt="fourth"></li>
+<li>在打开的 <font color="#ff0000">task.json</font>文件中改为：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  // See https://go.microsoft.com/fwlink/?LinkId=733558</span><br><span class="line">  // for the documentation about the tasks.json format</span><br><span class="line">  &quot;version&quot;: &quot;2.0.0&quot;,</span><br><span class="line">  &quot;command&quot;: &quot;python&quot;,</span><br><span class="line">  &quot;isShellCommand&quot;: true,</span><br><span class="line">  &quot;args&quot;: [&quot;$&#123;file&#125;&quot;],</span><br><span class="line">  &quot;showOutput&quot;: &quot;always&quot;,</span><br><span class="line">  &quot;options&quot;: &#123;</span><br><span class="line">    &quot;env&quot;:&#123;</span><br><span class="line">      &quot;PYTHONIOENCODING&quot;: &quot;UTF-8&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>再<font color="#ff0000">Ctrl + Shift +b</font>运行程序即可。</p>
+<h3 id="若想调试，配置交互式环境"><a href="#若想调试，配置交互式环境" class="headerlink" title="若想调试，配置交互式环境"></a>若想调试，配置交互式环境</h3><p>  选择调试，在<font color="#0099ff">下拉菜单</font>（现在为空）里选择<font color="#ff0000">添加配置</font>,会生成<font color="#ff0000"><strong><em>launch.json</em></strong></font>文件，保存关闭,下拉菜单会出现多个选项，一般选择：<font color="#009900"><br>  ①python（不能接受输入）<br>  ②Intergrated Terminal/Console<br>  ③External Terminal/Console<br>  </font><br>  <img src="http://ox33lq08p.bkt.clouddn.com/snipaste20171218_211318.png" alt="fifth"><br>当选择<font color="#009900">②Intergrated Terminal/Console</font>时，对<font color="#ff0000">launch.json</font>进行配置，<font color="#ff0000"><em>找到”name”:”Intergrated Terminal/Console”这一项，将”cwd”里的值改为”${workspaceRoot}”即可</em></font>。</p>
+<p>参考资料：<a href="https://jingyan.baidu.com/article/00a07f38503a2b82d028dc26.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/00a07f38503a2b82d028dc26.html</a><br>         <a href="https://www.zhihu.com/question/49799276" target="_blank" rel="noopener">https://www.zhihu.com/question/49799276</a></p>
 
       
     </div>
@@ -655,9 +599,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/GitHub/" rel="tag"><i class="fa fa-tag"></i> GitHub</a>
+            <a href="/tags/VS-Code/" rel="tag"><i class="fa fa-tag"></i> VS Code</a>
           
-            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
           
         </div>
       
@@ -670,18 +614,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/01/Third_Article/" rel="next" title="关于VS Code报错“扩展主机意外终止”的解决办法">
-                <i class="fa fa-chevron-left"></i> 关于VS Code报错“扩展主机意外终止”的解决办法
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/22/Fifth_Article/" rel="prev" title="Windows下输入正确密码无法进入的解决办法">
-                Windows下输入正确密码无法进入的解决办法 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/01/Atom_Packages/" rel="prev" title="Atom插件安装问题">
+                Atom插件安装问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -760,7 +700,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -779,7 +719,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -812,7 +754,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -834,6 +778,11 @@
               
                 <span class="links-of-author-item">
                   <a href="https://github.com/PercySu" target="_blank" title="GitHub"><i class="fa fa-fw fa-github-alt"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:hzpengcheng@gmail.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   
                 </span>
               
@@ -869,7 +818,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Git"><span class="nav-number">1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注册GitHub账号"><span class="nav-number">1.3.</span> <span class="nav-text">注册GitHub账号</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成新的SSH-Key配置"><span class="nav-number">1.4.</span> <span class="nav-text">生成新的SSH Key配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#生成文件"><span class="nav-number">1.4.1.</span> <span class="nav-text">生成文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加SSH-Key到GitHub"><span class="nav-number">1.4.2.</span> <span class="nav-text">添加SSH Key到GitHub</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo"><span class="nav-number">2.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置hexo"><span class="nav-number">3.</span> <span class="nav-text">设置hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置GitHubPage"><span class="nav-number">4.</span> <span class="nav-text">配置GitHubPage</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启用GitHubPage"><span class="nav-number">5.</span> <span class="nav-text">启用GitHubPage</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将本地hexo项目托管到GitHub"><span class="nav-number">6.</span> <span class="nav-text">将本地hexo项目托管到GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#config-yml"><span class="nav-number">7.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo-deployer-git插件"><span class="nav-number">8.</span> <span class="nav-text">安装hexo-deployer-git插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署你本地的主题到github上"><span class="nav-number">9.</span> <span class="nav-text">部署你本地的主题到github上</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#后话"><span class="nav-number">10.</span> <span class="nav-text">后话</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#写文章"><span class="nav-number">10.1.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于主题"><span class="nav-number">10.2.</span> <span class="nav-text">关于主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于绑定域名"><span class="nav-number">10.3.</span> <span class="nav-text">关于绑定域名</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#必读"><span class="nav-number">1.</span> <span class="nav-text">必读</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置Python开发环境"><span class="nav-number">2.</span> <span class="nav-text">配置Python开发环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#若想调试，配置交互式环境"><span class="nav-number">3.</span> <span class="nav-text">若想调试，配置交互式环境</span></a></li></ol></div>
             
 
           </div>
@@ -908,7 +857,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">22k</span>
+    <span title="站点总字数">23k</span>
   
 
   
@@ -917,7 +866,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">20 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
   
 </div>
 
