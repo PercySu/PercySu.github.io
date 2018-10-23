@@ -182,6 +182,8 @@
 <meta name="twitter:description" content="世事一场大梦，人生几度秋凉。">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="此心光明，亦复何言？" type="application/atom+xml" />
 
@@ -911,18 +913,17 @@ setInterval("createtime()",250);
 
   <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
   <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
    <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: 'dd751a885e8d2940141a',
           clientSecret: '102dd5f2abbaa6263b546e38cf6ed9bca747e1e7',
-          repo: 'percysu.github.io',
-          owner: 'percysu',
-          admin: ['percysu'],
-          id: md5(window.location.pathname),
+          repo: 'PercySu.github.io',
+          owner: 'PercySu',
+          admin: ['PercySu'],
+          id: location.pathname,
           distractionFreeMode: 'true'
         })
-        gitalk.render('gitalk-container')
+        gitalk.render('gitalk-container')           
        </script>
 
   
