@@ -5,9 +5,9 @@
   <subtitle>何不如笑傲风月，踏三山，伴红颜，此生无憾！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://percysu.com/"/>
+  <link href="http://percysu.com/"/>
   <updated>2018-10-24T12:42:28.962Z</updated>
-  <id>https://percysu.com/</id>
+  <id>http://percysu.com/</id>
   
   <author>
     <name>PercySu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>关于时间</title>
-    <link href="https://percysu.com/2018/10/22/Time/"/>
-    <id>https://percysu.com/2018/10/22/Time/</id>
+    <link href="http://percysu.com/2018/10/22/Time/"/>
+    <id>http://percysu.com/2018/10/22/Time/</id>
     <published>2018-10-21T17:49:34.000Z</published>
     <updated>2018-10-24T12:42:28.962Z</updated>
     
@@ -34,17 +34,17 @@
     
     </summary>
     
-      <category term="notes" scheme="https://percysu.com/categories/notes/"/>
+      <category term="notes" scheme="http://percysu.com/categories/notes/"/>
     
     
-      <category term="感悟" scheme="https://percysu.com/tags/%E6%84%9F%E6%82%9F/"/>
+      <category term="感悟" scheme="http://percysu.com/tags/%E6%84%9F%E6%82%9F/"/>
     
   </entry>
   
   <entry>
     <title>V2Ray,新一代科学上网神器</title>
-    <link href="https://percysu.com/2018/08/10/V2Ray/"/>
-    <id>https://percysu.com/2018/08/10/V2Ray/</id>
+    <link href="http://percysu.com/2018/08/10/V2Ray/"/>
+    <id>http://percysu.com/2018/08/10/V2Ray/</id>
     <published>2018-08-09T19:10:25.000Z</published>
     <updated>2018-10-22T18:39:42.044Z</updated>
     
@@ -69,19 +69,19 @@
     
     </summary>
     
-      <category term="服务器" scheme="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="V2Ray" scheme="https://percysu.com/tags/V2Ray/"/>
+      <category term="V2Ray" scheme="http://percysu.com/tags/V2Ray/"/>
     
-      <category term="科学上网" scheme="https://percysu.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="http://percysu.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
   </entry>
   
   <entry>
     <title>CMake + OpenCV3.4.1 + VS2017静态编译</title>
-    <link href="https://percysu.com/2018/05/19/CMake_OpenCV/"/>
-    <id>https://percysu.com/2018/05/19/CMake_OpenCV/</id>
+    <link href="http://percysu.com/2018/05/19/CMake_OpenCV/"/>
+    <id>http://percysu.com/2018/05/19/CMake_OpenCV/</id>
     <published>2018-05-19T11:25:00.000Z</published>
     <updated>2018-10-22T18:33:04.747Z</updated>
     
@@ -98,17 +98,17 @@
     
     </summary>
     
-      <category term="环境搭建" scheme="https://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="OpenCV" scheme="https://percysu.com/tags/OpenCV/"/>
+      <category term="OpenCV" scheme="http://percysu.com/tags/OpenCV/"/>
     
   </entry>
   
   <entry>
     <title>搭建SSR服务器附带锐速加速</title>
-    <link href="https://percysu.com/2018/03/12/SSR/"/>
-    <id>https://percysu.com/2018/03/12/SSR/</id>
+    <link href="http://percysu.com/2018/03/12/SSR/"/>
+    <id>http://percysu.com/2018/03/12/SSR/</id>
     <published>2018-03-11T18:59:45.000Z</published>
     <updated>2018-10-22T18:40:08.924Z</updated>
     
@@ -125,19 +125,19 @@
     
     </summary>
     
-      <category term="服务器" scheme="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+      <category term="服务器" scheme="http://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     
-      <category term="科学上网" scheme="https://percysu.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="http://percysu.com/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
-      <category term="ShadowSocks" scheme="https://percysu.com/tags/ShadowSocks/"/>
+      <category term="ShadowSocks" scheme="http://percysu.com/tags/ShadowSocks/"/>
     
   </entry>
   
   <entry>
     <title>Windows下输入正确密码无法进入的解决办法</title>
-    <link href="https://percysu.com/2018/02/22/Windows_Passwd/"/>
-    <id>https://percysu.com/2018/02/22/Windows_Passwd/</id>
+    <link href="http://percysu.com/2018/02/22/Windows_Passwd/"/>
+    <id>http://percysu.com/2018/02/22/Windows_Passwd/</id>
     <published>2018-02-22T14:06:23.000Z</published>
     <updated>2018-10-21T15:47:18.061Z</updated>
     
@@ -156,17 +156,17 @@
     
     </summary>
     
-      <category term="问题解决" scheme="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="问题解决" scheme="http://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
     
-      <category term="Windows" scheme="https://percysu.com/tags/Windows/"/>
+      <category term="Windows" scheme="http://percysu.com/tags/Windows/"/>
     
   </entry>
   
   <entry>
     <title>Windows下使用GitHub+Hexo搭建个人博客</title>
-    <link href="https://percysu.com/2017/12/18/Hexo_Blog/"/>
-    <id>https://percysu.com/2017/12/18/Hexo_Blog/</id>
+    <link href="http://percysu.com/2017/12/18/Hexo_Blog/"/>
+    <id>http://percysu.com/2017/12/18/Hexo_Blog/</id>
     <published>2017-12-18T15:46:41.000Z</published>
     <updated>2018-10-22T18:30:25.131Z</updated>
     
@@ -179,19 +179,19 @@
     
     </summary>
     
-      <category term="环境搭建" scheme="https://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="GitHub" scheme="https://percysu.com/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://percysu.com/tags/GitHub/"/>
     
-      <category term="Hexo" scheme="https://percysu.com/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://percysu.com/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>关于VS Code报错“扩展主机意外终止”的解决办法</title>
-    <link href="https://percysu.com/2017/10/01/VSC_Ext/"/>
-    <id>https://percysu.com/2017/10/01/VSC_Ext/</id>
+    <link href="http://percysu.com/2017/10/01/VSC_Ext/"/>
+    <id>http://percysu.com/2017/10/01/VSC_Ext/</id>
     <published>2017-10-01T05:33:41.000Z</published>
     <updated>2018-10-21T15:46:37.176Z</updated>
     
@@ -205,17 +205,17 @@
     
     </summary>
     
-      <category term="问题解决" scheme="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="问题解决" scheme="http://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
     
-      <category term="VS Code" scheme="https://percysu.com/tags/VS-Code/"/>
+      <category term="VS Code" scheme="http://percysu.com/tags/VS-Code/"/>
     
   </entry>
   
   <entry>
     <title>Atom插件安装问题</title>
-    <link href="https://percysu.com/2017/10/01/Atom_Packages/"/>
-    <id>https://percysu.com/2017/10/01/Atom_Packages/</id>
+    <link href="http://percysu.com/2017/10/01/Atom_Packages/"/>
+    <id>http://percysu.com/2017/10/01/Atom_Packages/</id>
     <published>2017-10-01T04:09:34.000Z</published>
     <updated>2018-10-22T04:21:43.419Z</updated>
     
@@ -228,17 +228,17 @@
     
     </summary>
     
-      <category term="问题解决" scheme="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <category term="问题解决" scheme="http://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
     
     
-      <category term="Atom" scheme="https://percysu.com/tags/Atom/"/>
+      <category term="Atom" scheme="http://percysu.com/tags/Atom/"/>
     
   </entry>
   
   <entry>
     <title>VS Code配置Python开发环境</title>
-    <link href="https://percysu.com/2017/09/29/VSC_Py/"/>
-    <id>https://percysu.com/2017/09/29/VSC_Py/</id>
+    <link href="http://percysu.com/2017/09/29/VSC_Py/"/>
+    <id>http://percysu.com/2017/09/29/VSC_Py/</id>
     <published>2017-09-29T11:15:57.000Z</published>
     <updated>2018-10-22T18:36:59.368Z</updated>
     
@@ -254,12 +254,12 @@
     
     </summary>
     
-      <category term="环境搭建" scheme="https://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+      <category term="环境搭建" scheme="http://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="VS Code" scheme="https://percysu.com/tags/VS-Code/"/>
+      <category term="VS Code" scheme="http://percysu.com/tags/VS-Code/"/>
     
-      <category term="Python" scheme="https://percysu.com/tags/Python/"/>
+      <category term="Python" scheme="http://percysu.com/tags/Python/"/>
     
   </entry>
   
