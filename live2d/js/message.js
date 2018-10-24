@@ -29,7 +29,7 @@ $(function(){
     };
 
     $(document).on('copy', function (){
-        showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
+        showMessage('你都复制了些什么呀，让我也看看呀~~', 5000);
     });
 
     function initTips(){
