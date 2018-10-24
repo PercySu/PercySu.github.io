@@ -1913,7 +1913,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0a090d;
+  background: #feff1d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3016,12 +3016,6 @@ ul.breadcrumb li+li:last-child {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
-}
-* {
-  cursor: url("http://ox33lq08p.bkt.clouddn.com/alien_32px_1092586_easyicon.net.ico"), auto !important;
-}
-:active {
-  cursor: url("http://ox33lq08p.bkt.clouddn.com/medical_pulse_32px_1092980_easyicon.net.ico"), auto !important;
 }
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;

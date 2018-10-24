@@ -6,7 +6,7 @@ const ap = new APlayer({
         name: "21 Guns",
         artist: 'Green Day',
         url: 'http://ox33lq08p.bkt.clouddn.com/Green%20Day%20-%2021%20Guns.mp3',
-        cover: 'http://ox33lq08p.bkt.clouddn.com/21Guns.jpg'
+        cover: 'https://wx2.sinaimg.cn/mw1024/005HHyjJly1fwjpauz6ryj30rs0rstwe.jpg'
       },
       {
         name: 'Swing,Swing',
