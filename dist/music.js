@@ -21,6 +21,12 @@ const ap = new APlayer({
         cover: 'https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwkgcm6ydsj30dw0dwgop.jpg'
       },
       {
+        name: 'Piano',
+        artist: '范逸臣',
+        url: 'https://music.163.com/song/media/outer/url?id=81889.mp3',
+        cover: 'https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwl0td6sbqj30d00d0n6e.jpg'
+      },
+      {
         name: 'It Ends Tonight',
         artist: 'The All-American Rejects',
         url: 'https://music.163.com/song/media/outer/url?id=19594308.mp3',

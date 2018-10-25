@@ -3,6 +3,49 @@
 
 
     
+    
+  <url>
+    <loc>https://percysu.com/2017/10/01/Atom_Packages/</loc>
+    <lastmod>2018-10-25T17:13:29.099Z</lastmod>
+    <data>
+        <display>
+        <title>Atom插件安装问题</title>
+        <pubTime>2017-10-01T04:09:34.000Z</pubTime>
+        
+        <tag>Atom</tag>
+         
+         
+           
+             
+              <breadCrumb title="问题解决" url="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://percysu.com/2018/08/10/V2Ray/</loc>
+    <lastmod>2018-10-25T16:54:28.203Z</lastmod>
+    <data>
+        <display>
+        <title>V2Ray,新一代科学上网神器</title>
+        <pubTime>2018-08-09T19:10:25.000Z</pubTime>
+        
+        <tag>V2Ray</tag>
+         
+        <tag>科学上网</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>https://percysu.com/2017/12/18/Hexo_Blog/</loc>
     <lastmod>2018-10-25T07:34:33.723Z</lastmod>
@@ -41,26 +84,6 @@
            
              
               <breadCrumb title="环境搭建" url="https://percysu.com/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://percysu.com/2017/10/01/Atom_Packages/</loc>
-    <lastmod>2018-10-25T07:07:31.175Z</lastmod>
-    <data>
-        <display>
-        <title>Atom插件安装问题</title>
-        <pubTime>2017-10-01T04:09:34.000Z</pubTime>
-        
-        <tag>Atom</tag>
-         
-         
-           
-             
-              <breadCrumb title="问题解决" url="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
           
         </display>
     </data>
@@ -130,28 +153,6 @@
 
     
   <url>
-    <loc>https://percysu.com/2018/08/10/V2Ray/</loc>
-    <lastmod>2018-10-25T06:27:25.243Z</lastmod>
-    <data>
-        <display>
-        <title>V2Ray,新一代科学上网神器</title>
-        <pubTime>2018-08-09T19:10:25.000Z</pubTime>
-        
-        <tag>V2Ray</tag>
-         
-        <tag>科学上网</tag>
-         
-         
-           
-             
-              <breadCrumb title="服务器" url="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://percysu.com/2018/10/22/Time/</loc>
     <lastmod>2018-10-24T12:42:28.962Z</lastmod>
     <data>
@@ -170,7 +171,6 @@
     </data>
     </url>
 
-    
     
   <url>
     <loc>https://percysu.com/2018/02/22/Windows_Passwd/</loc>

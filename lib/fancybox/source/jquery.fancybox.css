@@ -1,4 +1,4 @@
-@charset "UTF-8";
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>@charset "UTF-8";
 body.fancybox-active {
   overflow: hidden; }
 
