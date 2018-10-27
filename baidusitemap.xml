@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://percysu.com/2018/03/12/SSR/</loc>
+    <lastmod>2018-10-27T13:41:15.035Z</lastmod>
+    <data>
+        <display>
+        <title>搭建SSR服务器附带锐速加速</title>
+        <pubTime>2018-03-11T18:59:45.000Z</pubTime>
+        
+        <tag>ShadowSocks</tag>
+         
+        <tag>科学上网</tag>
+         
+         
+           
+             
+              <breadCrumb title="服务器" url="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://percysu.com/2017/10/01/Atom_Packages/</loc>
@@ -32,9 +54,9 @@
         <title>V2Ray,新一代科学上网神器</title>
         <pubTime>2018-08-09T19:10:25.000Z</pubTime>
         
-        <tag>V2Ray</tag>
-         
         <tag>科学上网</tag>
+         
+        <tag>V2Ray</tag>
          
          
            
@@ -104,28 +126,6 @@
            
              
               <breadCrumb title="问题解决" url="https://percysu.com/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://percysu.com/2018/03/12/SSR/</loc>
-    <lastmod>2018-10-25T06:57:38.040Z</lastmod>
-    <data>
-        <display>
-        <title>搭建SSR服务器附带锐速加速</title>
-        <pubTime>2018-03-11T18:59:45.000Z</pubTime>
-        
-        <tag>科学上网</tag>
-         
-        <tag>ShadowSocks</tag>
-         
-         
-           
-             
-              <breadCrumb title="服务器" url="https://percysu.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
           
         </display>
     </data>
