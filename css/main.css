@@ -1879,7 +1879,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aae48e;
+  background: #0bd6ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3064,14 +3064,14 @@ span#inline-purple {
   color: #fff;
 }
 .btn {
-  color: #49b1f5;
+  color: #762e39;
   background: #fff;
-  border: 2px solid #49b1f5;
+  border: 2px solid #762e39;
 }
 .btn:hover {
-  border-color: #49b1f5;
+  border-color: #762e39;
   color: #fff;
-  background: #49b1f5;
+  background: #762e39;
 }
 .posts-expand .post-title-link::before {
   content: "";

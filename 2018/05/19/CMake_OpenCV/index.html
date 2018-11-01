@@ -161,13 +161,13 @@
 
 
 
-  <meta name="description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。  准备工作CMake:https://cmake.org/ OpenCV:https://opencv.org/releases.html">
+  <meta name="description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。">
 <meta name="keywords" content="OpenCV">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CMake + OpenCV3.4.1 + VS2017静态编译">
 <meta property="og:url" content="https://percysu.com/2018/05/19/CMake_OpenCV/index.html">
 <meta property="og:site_name" content="此心光明，亦复何言？">
-<meta property="og:description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。  准备工作CMake:https://cmake.org/ OpenCV:https://opencv.org/releases.html">
+<meta property="og:description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://wx1.sinaimg.cn/mw1024/005HHyjJly1fwkgsvqkugj30om0aijrn.jpg">
 <meta property="og:image" content="https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwkgsvsa6bj30mn0i2jrr.jpg">
@@ -182,10 +182,10 @@
 <meta property="og:image" content="https://wx4.sinaimg.cn/mw1024/005HHyjJly1fwkgtjc2v5j312v0g8dht.jpg">
 <meta property="og:image" content="https://wx4.sinaimg.cn/mw1024/005HHyjJly1fwkgtjctp7j30u60jjgnf.jpg">
 <meta property="og:image" content="https://wx4.sinaimg.cn/mw1024/005HHyjJly1fwkgtj8ulhj313806k0t1.jpg">
-<meta property="og:updated_time" content="2018-10-25T06:52:34.376Z">
+<meta property="og:updated_time" content="2018-11-01T10:30:12.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CMake + OpenCV3.4.1 + VS2017静态编译">
-<meta name="twitter:description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。  准备工作CMake:https://cmake.org/ OpenCV:https://opencv.org/releases.html">
+<meta name="twitter:description" content="引言 最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。">
 <meta name="twitter:image" content="https://wx1.sinaimg.cn/mw1024/005HHyjJly1fwkgsvqkugj30om0aijrn.jpg">
 
 
@@ -572,9 +572,10 @@
         <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><blockquote>
 <p>最近在做毕业设计的过程中，想要在未安装OpenCV环境的机器上运行我的OpenCV+MFC代码。但是从OpenCV3.1开始官方默认使用动态库的形式发布。我想使用静态库通过静态链接来将所用到的库链接进exe文件中，所以进行了OpenCV源码的静态编译。</p>
 </blockquote>
+<a id="more"></a>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p><strong>CMake</strong>:<a href="https://cmake.org/" target="_blank" rel="noopener">https://cmake.org/</a></p>
 <p><strong>OpenCV</strong>:<a href="https://opencv.org/releases.html" target="_blank" rel="noopener">https://opencv.org/releases.html</a></p>
-<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="1-安装OpenCV，并找到源码"><a href="#1-安装OpenCV，并找到源码" class="headerlink" title="1.安装OpenCV，并找到源码"></a>1.安装OpenCV，并找到源码</h2><p>安装OpenCV就不讲了，源码在安装目录的<strong>sources</strong>文件夹中<br><img src="https://wx1.sinaimg.cn/mw1024/005HHyjJly1fwkgsvqkugj30om0aijrn.jpg" alt=""><br><a id="more"></a></p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h2 id="1-安装OpenCV，并找到源码"><a href="#1-安装OpenCV，并找到源码" class="headerlink" title="1.安装OpenCV，并找到源码"></a>1.安装OpenCV，并找到源码</h2><p>安装OpenCV就不讲了，源码在安装目录的<strong>sources</strong>文件夹中<br><img src="https://wx1.sinaimg.cn/mw1024/005HHyjJly1fwkgsvqkugj30om0aijrn.jpg" alt=""></p>
 <h2 id="2-运行CMake"><a href="#2-运行CMake" class="headerlink" title="2.运行CMake"></a>2.运行CMake</h2><p>进入CMake安装目录，运行<code>/bin/cmake-gui.exe</code>，填写相关参数，包括：<font color="#ff9900">OpenCV源码目录</font> 和<font color="#ff9900">OpenCV.sln工程的导出目录</font><br><img src="https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwkgsvsa6bj30mn0i2jrr.jpg" alt=""></p>
 <p>点击<code>Configure</code></p>
 <p>第一次导出时需要设置后面用来编译此OpenCV.sln工程的VS的版本，这里我用的是VS 2017：<br><img src="https://wx2.sinaimg.cn/mw1024/005HHyjJly1fwkgsvqzqbj30dq0aat8p.jpg" alt=""></p>
