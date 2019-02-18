@@ -3,12 +3,6 @@ const ap = new APlayer({
     fixed: true,
     audio: [
       {
-        name: 'Across The Universe',
-        artist: 'The Beatles',
-        url: 'https://117.34.59.17/amobile.music.tc.qq.com/C400000bMho61s2BQn.m4a?guid=2004811696&vkey=FC510EDC242095BE2FCADB3AA9C150D931DB97E4F698AC9164EC76512138B076B0CCAFAEE8EFE68B827676A9958289538D00B3D1D409110A&uin=0&fromtag=66',
-        cover: 'https://wx1.sinaimg.cn/mw1024/005HHyjJly1g09pqwl23fj308c08cmxt.jpg'
-      },
-      {
         name: "21 Guns",
         artist: 'Green Day',
         url: 'https://music.163.com/song/media/outer/url?id=18127640.mp3',
@@ -30,7 +24,7 @@ const ap = new APlayer({
         name: '孤独的自由',
         artist: '玫瑰木子弹',
         url: 'https://music.163.com/song/media/outer/url?id=32334248.mp3',
-        cover: 'https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwkgcm6ydsj30dw0dwgop.jpg'
+        cover: 'https://wx3.sinaimg.cn/mw1024/005HHyjJly1fwkgcm6ydsj30dw0dwgop.jpg',
       },
       {
         name: 'Piano',
